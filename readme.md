@@ -51,6 +51,11 @@ run python3 Server.py
  cd NEW/Messaging
  run python3 client.py
 ```
+### After sending messages, head over to
+```sh
+localhost:8000/send
+```
+### to see message encrypted on server side
 ## Test Cases
 
 ```sh
