@@ -95,7 +95,6 @@ def Decrypt_AES_Key(aes_key: AES_Key):
     try:
         private_key = tuple(map(int, private_key_str.split(",")))
 
-        # ✅ FIX: Decrypt AES key correctly using list format
         decrypted_aes_key = decrypt_key(private_key, aes_key.AES_Key)
 
         with open(".env", "a") as f:  # Append instead of overwrite
